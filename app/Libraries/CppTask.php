@@ -18,7 +18,7 @@ class CppTask extends LanguageTask
     public function __construct($filename, $input, $params)
     {
         parent::__construct($filename, $input, $params);
-        $this->default_params['compileargs'] = array();
+        $this->default_params['compileargs'] = array("-w");
     }
 
     public static function getVersionCommand()
