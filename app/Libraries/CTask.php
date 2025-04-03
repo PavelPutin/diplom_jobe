@@ -19,11 +19,7 @@ class CTask extends LanguageTask
     public function __construct($filename, $input, $params)
     {
         parent::__construct($filename, $input, $params);
-        $this->default_params['compileargs'] = array(
-            '-Wall',
-            '-Werror',
-            '-std=c99',
-            '-x c');
+        $this->default_params['compileargs'] = array();
     }
 
     public static function getVersionCommand()
